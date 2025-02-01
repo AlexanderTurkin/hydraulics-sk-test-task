@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация – Гидравлика СК</title>
+    <link rel="icon" href="https://hydraulics-sk.ru/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="logo-container">
+        <img src="https://hydraulics-sk.ru/i/logo_white.png?12" alt="Логотип Гидравлика СК">
+    </div>
+    <form id="registrationForm" novalidate>
+        <div class="form-group">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Введите email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Подтверждение пароля:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Подтвердите пароль" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Страна:</label>
+            <select id="country" name="country" required>
+                <option value="">Выберите страну</option>
+                <option value="RU">Россия</option>
+                <option value="BY">Беларусь</option>
+                <option value="KZ">Казахстан</option>
+            </select>
+        </div>
+        <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+                Согласен с условиями
+                <input type="checkbox" id="terms" name="terms" required>
+            </label>
+        </div>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
+    <div id="message"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
